@@ -10,7 +10,7 @@ import baiduCode from './config/baiduCode' // 百度统计hm码
 import htmlModules from './config/htmlModules' // 自定义插入的html块
 
 // const DOMAIN_NAME = 'xugaoyi.com' // 域名 (不带https)
-// const WEB_SITE = `https://${DOMAIN_NAME}` // 网址
+// const WEB_SITE = `https:// ${DOMAIN_NAME}` // 网址
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
   theme: 'vdoing', // 使用npm主题包
@@ -23,7 +23,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       description: '学习文档',
     }
   },
-  // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
+  // base: '/', // 默认'/'。如果你想将你的网站部署到如 https:// foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
 
   // 主题配置
   themeConfig: {
@@ -150,9 +150,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       slogan: '前端界的小学生',
     },
 
-    // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
+    // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https:// doc.xugaoyi.com/pages/a20ce8/#social)
     social: {
-      // iconfontCssFile: '//at.alicdn.com/t/xxx.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自己添加。阿里图片库：https://www.iconfont.cn/
+      // iconfontCssFile: '//at.alicdn.com/t/xxx.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自己添加。
+      // 阿里图片库：https: //www.iconfont.cn/
       icons: [
         {
           iconClass: 'icon-youjian',
