@@ -3,8 +3,7 @@
     class="theme-container"
     :class="pageClasses"
     @touchstart="onTouchStart"
-    @touchend="onTouchEnd"
-  >
+    @touchend="onTouchEnd">
     <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar" />
 
     <div class="sidebar-mask" @click="toggleSidebar(false)"></div>
@@ -17,19 +16,16 @@
     <Sidebar
       :items="sidebarItems"
       @toggle-sidebar="toggleSidebar"
-      v-show="showSidebar"
-    >
+      v-show="showSidebar">
       <template #top v-if="sidebarSlotTop">
         <div
           class="sidebar-slot sidebar-slot-top"
-          v-html="sidebarSlotTop"
-        ></div>
+          v-html="sidebarSlotTop"></div>
       </template>
       <template #bottom v-if="sidebarSlotBottom">
         <div
           class="sidebar-slot sidebar-slot-bottom"
-          v-html="sidebarSlotBottom"
-        ></div>
+          v-html="sidebarSlotBottom"></div>
       </template>
       <!-- <slot name="sidebar-top" #top />
       <slot name="sidebar-bottom" #bottom /> -->
