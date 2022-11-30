@@ -9,8 +9,8 @@ import dayjs from 'dayjs'
 // import baiduCode from './config/baiduCode' // 百度统计hm码
 import htmlModules from './config/htmlModules' // 自定义插入的html块
 
-// const DOMAIN_NAME = 'xugaoyi.com' // 域名 (不带https)
-// const WEB_SITE = `https:// ${DOMAIN_NAME}` // 网址
+const DOMAIN_NAME = 'vblog.qjjstudy.asia' // 域名 (不带https)
+const WEB_SITE = `https:// ${DOMAIN_NAME}` // 网址
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
   theme: 'vdoing', // 使用npm主题包
@@ -140,57 +140,58 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 文章默认的作者信息，(可在md文件中单独配置此信息) string | {name: string, link?: string}
     author: {
-      name: 'qjj', // 必需
+      name: '船到桥头沉', // 必需
       link: '', // 可选的
     },
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
       avatar: 'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
-      name: 'Evan Xu',
-      slogan: '前端界的小学生',
+      name: '船到桥头沉',
+      slogan: '==========',
     },
 
     // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https:// doc.xugaoyi.com/pages/a20ce8/#social)
-    social: {
-      // iconfontCssFile: '//at.alicdn.com/t/xxx.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自己添加。
-      // 阿里图片库：https: //www.iconfont.cn/
-      icons: [
-        {
-          iconClass: 'icon-youjian',
-          title: '发邮件',
-          link: '',
-        },
-        {
-          iconClass: 'icon-github',
-          title: 'GitHub',
-          link: '',
-        },
-        {
-          iconClass: 'icon-erji',
-          title: '听音乐',
-          link: '',
-        },
-      ],
-    },
+    // social: {
+    //   // iconfontCssFile: '//at.alicdn.com/t/xxx.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自己添加。
+    //   // 阿里图片库：https: //www.iconfont.cn/
+    //   icons: [
+    //     {
+    //       iconClass: 'icon-youjian',
+    //       title: '发邮件',
+    //       link: '',
+    //     },
+    //     {
+    //       iconClass: 'icon-github',
+    //       title: 'GitHub',
+    //       link: '',
+    //     },
+    //     {
+    //       iconClass: 'icon-erji',
+    //       title: '听音乐',
+    //       link: '',
+    //     },
+    //   ],
+    // },
 
     // 页脚信息
     footer: {
-      createYear: 2019, // 博客创建年份
+      createYear: 2022, // 博客创建年份
       copyrightInfo:
-        'Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息、备案信息等，支持a标签或换行标签</br>
+        '船到桥头沉 | <a href="https://github.com/NewStudyAccount/vblog/blob/main/LICENSE" target="_blank">MIT License</a>',
+      // 博客版权信息、备案信息等，支持a标签或换行标签</br>
     },
 
     // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
     extendFrontmatter: {
       author: {
-        name: 'qjj',
-        link: ''
+        name: '船到桥头沉',
+        link: '#'
       }
     },
 
     // 自定义hmtl(广告)模块
-    htmlModules
+    // htmlModules
   },
 
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
@@ -203,7 +204,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         content: '前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown',
       },
     ],
-    ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
+    // ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
   ],
 
@@ -214,6 +215,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 全文搜索。 ⚠️注意：此插件会在打开网站时多加载部分js文件用于搜索，导致初次访问网站变慢。如在意初次访问速度的话可以不使用此插件！（推荐：vuepress-plugin-thirdparty-search）
     // 'fulltext-search',
+    [
+      "sitemap", // 网站地图
+      {
+        hostname: WEB_SITE,
+      },
+    ],
 
 
     [
