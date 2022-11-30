@@ -9,8 +9,8 @@ import dayjs from 'dayjs'
 // import baiduCode from './config/baiduCode' // 百度统计hm码
 import htmlModules from './config/htmlModules' // 自定义插入的html块
 
-const DOMAIN_NAME = 'vblog.qjjstudy.asia' // 域名 (不带https)
-const WEB_SITE = `https:// ${DOMAIN_NAME}` // 网址
+// const DOMAIN_NAME = 'vblog.qjjstudy.asia' // 域名 (不带https)
+// const WEB_SITE = `https:// ${DOMAIN_NAME}` // 网址
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
   theme: 'vdoing', // 使用npm主题包
@@ -215,12 +215,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 全文搜索。 ⚠️注意：此插件会在打开网站时多加载部分js文件用于搜索，导致初次访问网站变慢。如在意初次访问速度的话可以不使用此插件！（推荐：vuepress-plugin-thirdparty-search）
     // 'fulltext-search',
-    [
-      "sitemap", // 网站地图
-      {
-        hostname: WEB_SITE,
-      },
-    ],
+    // [
+    //   "sitemap", // 网站地图
+    //   {
+    //     hostname: WEB_SITE,
+    //   },
+    // ],
 
 
     [
