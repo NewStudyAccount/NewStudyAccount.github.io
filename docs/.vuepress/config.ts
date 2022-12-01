@@ -6,8 +6,7 @@ import { defineConfig4CustomTheme, UserPlugins } from 'vuepress/config'
 import { VdoingThemeConfig } from 'vuepress-theme-vdoing/types'
 // @ts-ignore
 import dayjs from 'dayjs'
-// import baiduCode from './config/baiduCode' // 百度统计hm码
-import htmlModules from './config/htmlModules' // 自定义插入的html块
+
 
 // const DOMAIN_NAME = 'vblog.qjjstudy.asia' // 域名 (不带https)
 // const WEB_SITE = `https:// ${DOMAIN_NAME}` // 网址
@@ -122,6 +121,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: '归档', link: '/archives/' },
         ],
       },
+
+
+      //  个人记录内容
+      { text: '技术笔记', link: '/pages/0ff885/' },
+
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/logo.png', // 导航栏logo
@@ -146,7 +150,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: 'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
+      avatar: '#',
       name: '船到桥头沉',
       slogan: '==========',
     },
@@ -190,8 +194,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       }
     },
 
-    // 自定义hmtl(广告)模块
-    // htmlModules
   },
 
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
