@@ -38,8 +38,10 @@ jobs:
           cd docs/.vuepress/dist
           git config --global init.defaultBranch $deploy_branch
           git init
-          git config user.name ${user_name}
-          git config user.email ${user_email}
+#          git config user.name ${user_name}
+#          git config user.email ${user_email}
+          git config user.name 'qjj'
+          git config user.email 'mr.boss.qjj@gmail.com'
           git add -A
           git commit -m "auto deploy, $commit_info"
           remote_addr=`echo $remote_addr | awk -F'://' '{print $2}'`
