@@ -5,7 +5,7 @@ npm run build # 生成静态文件
 cd docs/.vuepress/dist # 进入生成的文件夹
 
 # deploy to github
-# echo 'vblog.qjjstudy.asia' > CNAME
+echo 'vblog.qjjstudy.asia' > CNAME
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
   # git@github.com:SaulJWu/SaulJWu.github.io.git
@@ -13,8 +13,8 @@ if [ -z "$GITHUB_TOKEN" ]; then
   githubUrl=git@github.com:NewStudyAccount/vblog.git
 else
   msg='来自github action的自动部署'
-  githubUrl=https://NewStudyAccount:${GITHUB_TOKEN}@github.com/NewStudyAccount/vblog.git
-  git config --global user.name "NewStudyAccount"
+  githubUrl=https://qjj:${GITHUB_TOKEN}@github.com/NewStudyAccount/vblog.git
+  git config --global user.name "qjj"
   git config --global user.email "mr.boss.qjj@gmail.com"
 fi
 git init
