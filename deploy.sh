@@ -5,7 +5,7 @@ npm run build # 生成静态文件
 cd docs/.vuepress/dist # 进入生成的文件夹
 
 # deploy to github
-# echo 'blog.xugaoyi.com' > CNAME
+ echo 'vblog.qjjstudy.asia' > CNAME
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
   # git@github.com:SaulJWu/SaulJWu.github.io.git
