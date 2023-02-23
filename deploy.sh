@@ -35,3 +35,4 @@ git push -f $codingUrl master # 推送到coding
 
 cd -
 rm -rf docs/.vuepress/dist
+
