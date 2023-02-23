@@ -21,17 +21,17 @@ git commit -m "${msg}"
 git push -f $githubUrl master:gh-pages # 推送到github
 
 # deploy to coding
-echo 'vblogTencent.qjjstudy.asia' > CNAME  # 自定义域名
-if [ -z "$CODING_TOKEN" ]; then  # -z 字符串 长度为0则为true；$CODING_TOKEN来自于github仓库`Settings/Secrets`设置的私密环境变量
-#  codingUrl=git@git.dev.tencent.com:xugaoyi/xugaoyi.git
-  codingUrl=git@e.coding.net:study-spaces/vblog/myStudyBlog.git
-else
-#  codingUrl=https://xugaoyi:${CODING_TOKEN}@git.dev.tencent.com/xugaoyi/xugaoyi.git
-  codingUrl=https://xugaoyi:${CODING_TOKEN}@e.coding.net/study-spaces/vblog/myStudyBlog.git
-fi
-git add -A
-git commit -m "${msg}"
-git push -f $codingUrl master # 推送到coding
+#echo 'vblogTencent.qjjstudy.asia' > CNAME  # 自定义域名
+#if [ -z "$CODING_TOKEN" ]; then  # -z 字符串 长度为0则为true；$CODING_TOKEN来自于github仓库`Settings/Secrets`设置的私密环境变量
+##  codingUrl=git@git.dev.tencent.com:xugaoyi/xugaoyi.git
+#  codingUrl=git@e.coding.net:study-spaces/vblog/myStudyBlog.git
+#else
+##  codingUrl=https://xugaoyi:${CODING_TOKEN}@git.dev.tencent.com/xugaoyi/xugaoyi.git
+#  codingUrl=https://xugaoyi:${CODING_TOKEN}@e.coding.net/study-spaces/vblog/myStudyBlog.git
+#fi
+#git add -A
+#git commit -m "${msg}"
+#git push -f $codingUrl master # 推送到coding
 
 cd -
 rm -rf docs/.vuepress/dist
