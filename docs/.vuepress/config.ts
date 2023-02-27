@@ -38,47 +38,16 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: '前端文章',
             items: [
-              { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
+                { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
             ],
           },
           {
             text: '学习笔记',
             items: [
-              { text: '《JavaScript教程》', link: '/note/javascript/' },
-              { text: '《JavaScript高级程序设计》', link: '/note/js/' },
-              { text: '《ES6 教程》', link: '/note/es6/' },
-              { text: '《Vue》', link: '/note/vue/' },
-              { text: '《React》', link: '/note/react/' },
-              {
-                text: '《TypeScript 从零实现 axios》',
-                link: '/note/typescript-axios/',
-              },
-              {
-                text: '《Git》',
-                link: '/note/git/',
-              },
-              {
-                text: 'TypeScript',
-                link: '/pages/51afd6/',
-              },
-              {
-                text: 'JS设计模式总结',
-                link: '/pages/4643cd/',
-              },
-              {
-                text: '个人学习笔记',
-                link: '/pages/7f1ff0/',
-              },
+              {text: '《Vue》', link: '/note/vue/' },
+              {text: '《Git》', link: '/note/git/',},
             ],
           },
-        ],
-      },
-      {
-        text: '页面',
-        link: '/ui/',
-        items: [
-          { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
-          { text: 'CSS', link: '/pages/0a83b083bdf257cb/' },
         ],
       },
       {
@@ -87,31 +56,46 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         items: [
           { text: '技术文档', link: '/pages/9a7ee40fc232253e/' },
           { text: 'GitHub技巧', link: '/pages/4c778760be26d8b3/' },
-          { text: 'Nodejs', link: '/pages/117708e0af7f0bd9/' },
           { text: '博客搭建', link: '/pages/41f87d890d0a02af/' },
         ],
       },
+      //个人学习笔记
       {
-        text: '更多',
-        link: '/more/',
+        text: '个人学习笔记',
+        link: '/pages/a31ae1/',
         items: [
-          { text: '学习', link: '/pages/f2a556/' },
-          { text: '面试', link: '/pages/aea6571b7a8bae86/' },
-          { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
-          { text: '实用技巧', link: '/pages/baaa02/' },
-          { text: '友情链接', link: '/friends/' },
-        ],
+          {
+            text: 'Docker' ,
+            items :[
+              { text: 'Docker',link: '/pages/ba54ad/'}
+            ]
+          },
+          {
+            text: 'Redis',
+            items: [
+              {text: 'Redis' ,link: '/pages/bb03b7/'},
+              {text: 'Redis-Docker' ,link: '/pages/1aa945/'},
+            ]
+          },
+          {
+            text: 'Mq',
+            items: [
+              {text: 'RocketMq' ,link: '/pages/1ef249/'},
+              {text: 'RabbitMq' ,link: '/pages/633ffb/'},
+            ]
+          }
+        ]
       },
-      // { text: '关于', link: '/about/' },
-      // {
-      //   text: '收藏',
-      //   link: '/pages/beb6c0bd8a66cea6/',
-      //   // items: [
-      //   //   { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
-      //   //   { text: '资源', link: '/pages/eee83a9211a70f9d/' },
-      //   //   { text: 'Vue资源', link: '/pages/12df8ace52d493f6/' },
-      //   // ],
-      // },
+
+
+
+      //  个人记录内容
+      { text: '技术笔记', link: '/pages/0ff885/' },
+
+        //问题总结
+      {text: '问题总结',link: '/pages/aefe68/'},
+
+
       {
         text: '索引',
         link: '/archives/',
@@ -123,9 +107,13 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
 
 
-      //  个人记录内容
-      { text: '技术笔记', link: '/pages/0ff885/' },
-
+      {
+        text: '更多',
+        link: '/more/',
+        items: [
+          { text: '友情链接', link: '/friends/' },
+        ],
+      },
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/logo.png', // 导航栏logo
@@ -203,7 +191,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       'meta',
       {
         name: 'keywords',
-        content: '前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown',
+        content: '个人技术博客',
       },
     ],
     // ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
